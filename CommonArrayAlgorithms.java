@@ -67,6 +67,9 @@ public class CommonArrayAlgorithms
      */
     public static void printElementSeparators()
     {
+      /*  int[] randomArray = CommonArrayAlgorithms.createRandomArray(5,5);
+        System.out.print(randomArray[0]);
+        for (i = 1*/
     }
 
     /*
@@ -75,8 +78,27 @@ public class CommonArrayAlgorithms
      *  find the index of the first element with the specified value
      *  prints the array and the index (or -1 if not found)
      */
-    public static void linearSearch( int valueToFind )
+    public static int linearSearch( int valueToFind )
     {
+        int[] linearArray = createRandomArray(5,10);
+        for(int i = 0; i < linearArray.length; i++)
+        {
+            System.out.println(i + ": " + linearArray[i]);
+        }
+        
+        for (int i = 0; i< linearArray.length; i++) 
+        {
+            if (valueToFind == linearArray[i])
+            {
+                System.out.print(i);
+                return i;
+        } else
+            {
+                System.out.print(" ");
+            }
+        }
+        System.out.print("-1");
+        return -1;
     }
 
     /*

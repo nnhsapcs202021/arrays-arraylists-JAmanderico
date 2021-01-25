@@ -1,4 +1,4 @@
-
+import java.util.GregorianCalendar;
 /**
  * Write a description of class Notes here.
  * 
@@ -27,7 +27,7 @@ public class ArrayNotes
          * 
          * Square brackets are used to reference a specific element in the array based on its index.
          *      Incicies are zero based.
-         */
+          */
         for (int i = 0; i < evens.length; i ++)
         {
             evens[i] = (i + 1) * 2;
@@ -107,6 +107,32 @@ public class ArrayNotes
         }
         
     }
+
+    public static void createArrayOfCalendars()
+    {
+        /*
+         * Create an array of 12 calendars, each calendar initialized to the start of each month.
+         * 
+         * When we create an array of objects, each element is initialized to null. We have to
+         *      eplicitly create new objects and assign to each element.
+         */
+        
+        GregorianCalendar[] calendars = new GregorianCalendar[12];
+        
+        /*
+         * At this point, every element in the array has a value of null
+         */
+        // for each [gregoran calendar object] in [the array calendars]
+        for(GregorianCalendar calendar : calendars)
+        {
+            System.out.println(calendar);
+        }
+        
+    }
+
+
+
+
 }
 
 
