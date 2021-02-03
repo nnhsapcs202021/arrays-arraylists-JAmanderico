@@ -42,7 +42,7 @@ public class ArrayNotes
         }
     }
 
-    public static void createArrowOfOdds()
+    public static void createArrayOfOdds()
     {
         /*
          * An array literal (i.e. curly brackets and a comma-separated values) can be used to 

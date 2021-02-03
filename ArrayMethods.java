@@ -25,9 +25,15 @@ public class ArrayMethods
     {
         System.out.println(Arrays.toString(this.values));
     }
+    
+    /**
+     * 1. Swap the first and last elements in the array.
+     */
     public void swapFirstAndLast()
     {
-        //
+        int temp = this.values[0];
+        this.values[0] = this.values[-1];
+        this.values[-1] = temp;
     }
     
     /**
@@ -46,16 +52,26 @@ public class ArrayMethods
         
         
         this.values[0] = temp;
-        /*for ( int i = 1; i < this.values.length - 1; i++)
+    }
+    
+    /**
+     * 3. Replace all even elements with 0.
+     */
+    public void evensAreZero()
+    {
+        for ( int i = 0; i < this.values.length - 1; i++ )
         {
-            if( this.values[i] != this.values[-1] )
+            
+        }
+        /*for ( int element : this.values )
+        {   
+            double remainder = Math.IEEEremainder( element, 2 );
+            if ( remainder == 0)
             {
-                this.values[i] = this.values[i + 1];
                 
             }
         }*/
     }
-    //...
     
     public static void main( String[] args )
     {
